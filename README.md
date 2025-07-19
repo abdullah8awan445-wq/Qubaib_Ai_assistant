@@ -1,88 +1,83 @@
-# Qubaib_Ai_assistant
-Certainly! Below is a detailed description of your **Islamic AI Assistant** project that you can post on **GitHub** (e.g., in the `README.md` file). This includes its purpose, features, tech stack, setup instructions, and more.  
 
-# **Islamic AI Assistant** 🤖🕌  
+# **Qubaib AI** 🤖📖  
+*A Quran-centric, Hadith-based AI Assistant for Authentic Islamic Guidance*  
 
-An **AI-powered Islamic assistant** designed to help Muslims with religious queries, including Quranic explanations, Hadith references, prayer times, Islamic rulings (Fiqh), and general spiritual guidance. Built with Python and leveraging modern NLP models, this assistant aims to provide **accurate, reliable, and Islamically sound** answers.  
+**Qubaib AI** is an AI-powered Islamic assistant designed to provide **reliable, Quran- and Sunnah-based answers** while adhering to **Ahlus Sunnah wal-Jama'ah** principles. It avoids innovation (Bid'ah) and focuses on authentic sources, acting as a digital companion for learning, worship, and daily Islamic life.  
+
+---
+
+## **Core Principles** 🕌  
+✅ **Quran & Sunnah First** – Answers are rooted in the Quran, authentic Hadith (Sahih Bukhari, Muslim, etc.), and interpretations from trusted scholars.  
+✅ **Anti-Bid'ah** – Explicitly rejects unverified practices or fringe opinions.  
+✅ **Fiqh-Aware** – Clarifies differing scholarly views (Salafi/Hanbali-leaning by default but configurable).  
+✅ **Safe for All Ages** – Filters out inappropriate or extremist content.  
+
+---
 
 ## **Features** ✨  
 
-✅ **Quranic Search & Tafsir** – Retrieve verses by keyword or Surah/Ayah, with explanations from trusted Tafsirs (e.g., Ibn Kathir).  
+### **1. Quranic Toolkit**  
+- **Verse Search**: Retrieve Ayat by keyword, Surah, or Juz (with Tajweed hints).  
+- **Tafsir Integration**: Explanations from Ibn Kathir, Tafsir As-Sa'di, etc.  
+- **Thematic Studies**: e.g., "Show verses about patience."  
 
-✅ **Hadith Lookup** – Search Hadiths from major collections (Sahih Bukhari, Muslim, etc.) with grading.  
+### **2. Hadith Engine**  
+- **Search by Topic**: e.g., "Hadith about backbiting."  
+- **Grading Check**: Auto-tags Hadith as Sahih, Hasan, or Da'if (using Albani’s classifications).  
+- **Contradiction Resolver**: Flags weak/fabricated narrations.  
 
-✅ **Prayer Times Calculation** – Get accurate prayer times based on location (using APIs like Aladhan).  
+### **3. Worship Support**  
+- **Prayer Times**: Location-based with Qibla direction.  
+- **Dua/Dhikr Generator**: Context-aware (e.g., "Give me a dua for anxiety").  
+- **Salah Corrector**: Alerts users to common prayer mistakes.  
 
-✅ **Fiqh & Fatwa Assistance** – Answers Islamic legal questions based on reliable sources (Hanafi, Shafi’i, etc.).  
+### **4. Fatwa & Fiqh**  
+- **Halal/Haram Decisions**: With daleel (evidence).  
+- **Everyday Rulings**: e.g., "Is crypto halal?" (with balanced scholarly views).  
 
-✅ **Dua & Dhikr Recommendations** – Suggest supplications for different occasions (morning/evening, travel, sickness).  
+### **5. User Safety**  
+- **Misinfo Shield**: Warns against unsourced claims or extremist rhetoric.  
+- **Child Mode**: Simplified answers for young users.  
 
-✅ **Halal/Haram Checker** – Verify food ingredients or lifestyle choices against Islamic rulings.  
-
-✅ **Chat-Based Interface** – Natural language interaction via text or voice.  
-
-✅ **Multilingual Support** – English, Arabic, Urdu, and more.  
+---
 
 ## **Tech Stack** ⚙️  
+- **Backend**: Python (FastAPI) + LangChain for structured Islamic QA.  
+- **NLP Model**: Fine-tuned **Llama 3** or **Mistral** with Islamic datasets (Quran/Hadith embeddings).  
+- **Knowledge Base**:  
+  - Quran API (Quran.com/aladhan)  
+  - Hadith collections (Sunnah.com, Dorar.net)  
+  - Fiqh databases (IslamQA.info, Fatwa portals).  
+- **Frontend**: Telegram Bot (Python-telegram-bot) + Web Demo (Gradio).  
 
-- **Backend**: Python (Flask/FastAPI)  
-- **NLP Models**: Transformers (Hugging Face), fine-tuned Islamic QA models  
-- **Knowledge Base**: Quran & Hadith APIs, Islamic scholarly databases  
-- **Frontend (Optional)**: Streamlit, Gradio, or Telegram/Discord bot  
-- **Deployment**: Docker, AWS/GCP, or serverless (Vercel)  
+---
 
-## **Installation & Setup** 🛠️  
+## **Installation** 🛠️  
+```sh
+git clone https://github.com/yourusername/qubaib-ai.git  
+cd qubaib-ai  
+pip install -r requirements.txt  # Includes torch, transformers, fastapi  
+python main.py  # Launches local server or bot  
+```  
 
-### **Prerequisites**  
-- Python 3.10+  
-- Pip / Conda  
+**Configure**: Add API keys (e.g., Telegram bot token) in `.env`.  
 
-### **Steps**  
-1. Clone the repo:  
-   ```sh
-   git clone https://github.com/yourusername/islamic-ai-assistant.git
-   cd islamic-ai-assistant
-   ```
-
-2. Install dependencies:  
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-3. Configure API keys (e.g., Aladhan for prayer times):  
-   ```sh
-   echo "ALADHAN_API_KEY=your_api_key" > .env
-   ```
-
-4. Run the assistant:  
-   ```sh
-   python main.py
-   ```
-
-5. Access via:  
-   - **CLI**: Direct text input  
-   - **Web Interface**: `http://localhost:5000` (if using Flask)  
-   - **Telegram Bot**: `/start` (if bot integration is enabled)  
+---
 
 ## **Roadmap** 🗺️  
+- [x] Phase 1: Quran/Hadith CLI Tool  
+- [ ] Phase 2: Telegram Bot Deployment  
+- [ ] Phase 3: Mobile App (React Native + Tauri)  
+- [ ] Phase 4: Voice Assistant (Whisper + Arabic STT).  
 
-- [ ] Integrate **voice recognition** (Arabic/English).  
-- [ ] Add **user profiles** for personalized recommendations.  
-- [ ] Expand **Fiqh database** with more madhabs.  
-- [ ] Develop a **mobile app** (Flutter/React Native).  
+---
 
-## **Contributing** 🤝  
+## **Why "Qubaib"?**  
+Named after **Masjid Quba**, the first mosque in Islam, symbolizing purity and authenticity in knowledge.  
 
-Open to contributions! If you’re a developer, Islamic scholar, or linguist, feel free to:  
-- Improve NLP model accuracy.  
-- Add translations or new Hadith sources.  
-- Optimize the prayer time algorithm.  
-
-**Guidelines**:  
-1. Fork the repo.  
-2. Create a branch (`git checkout -b feature/new-feature`).  
-3. Submit a PR with a clear description.  
+---
 
 ## **License** 📜  
+**MIT License** (Open-source, but *not* for commercial use in misleading Islamic apps).  
 
-This project is under **MIT License** (free for non-commercial use with proper attribution).  
+**Disclaimer**: AI is a tool, not a scholar. Always consult real Ulama for critical matters.  
