@@ -1,0 +1,13 @@
+project-root/
+│── index.html               # Main HTML file
+│── css/
+│   ├── style.css            # Main styles
+│   └── animations.css       # Special animations
+│── js/
+│   ├── main.js              # Core functionality
+│   ├── knowledge-base.js    # Islamic knowledge database
+│   ├── commands.js          # Command processing
+│   └── voice.js             # Voice recognition
+│── assets/
+│   ├── images/              # Image assets
+│   └── fonts/               # Custom fonts

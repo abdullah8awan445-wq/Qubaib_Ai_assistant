@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+.arabic-font { font-family: 'Amiri', serif; }
+.jarvis-font { font-family: 'Orbitron', monospace; }
+.main-font { font-family: 'Inter', sans-serif; }
+
+.jarvis-bg {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
+    background-size: 400% 400%;
+}
+
+.chat-container {
+    height: 65vh;
+    background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+    border: 2px solid #3b82f6;
+}
+
+.jarvis-avatar {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+}
+
+.user-avatar {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+/* Additional styles from template */
